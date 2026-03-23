@@ -28,7 +28,46 @@ for (const btn of rejectbtns){
 
 
 
+const allBtn = document.getElementById("all-job");
+const interviewBtn = document.getElementById("interview-job");
+const rejectedBtn = document.getElementById("rejected-job");
 
+const cards = document.querySelectorAll(".job-card");
+
+
+allBtn.addEventListener("click", function () {
+  for (const card of cards) {
+    card.style.display = "block";
+  }
+});
+
+
+interviewBtn.addEventListener("click", function () {
+  for (const card of cards) {
+    const status = card.querySelector(".status-btn").innerText;
+
+    if (status === "Interview") {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  }
+});
+
+
+
+
+rejectedBtn.addEventListener("click", function () {
+  for (const card of cards) {
+    const status = card.querySelector(".status-btn").innerText;
+
+    if (status === "Rejected") {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  }
+});
 
 
 
