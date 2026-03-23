@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
-    <nav>
-        
-    </nav>
-    <main>
 
+<body class="py-5 bg-base-200 min-h-screen">
+    <header class="w-11/12 md:w-10/12 mx-auto border-b-2 border-blue-300">
+        <h1 class="title text-2xl font-bold">
+            Job Application Tracker
+        </h1>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-3 py-6">
+            <div class="text-center card w-full h-full bg-white p-5">
+                <h2 class="text-xl font-semibold">Total</h2>
+                <span id="total-count" class="text-3xl font-bold">8</span>
+            </div>
+            <div class="text-center card w-full h-full bg-white p-5">
+                <h2 class="text-xl font-semibold">Interview</h2>
+                <span id="interview-count" class="text-3xl font-bold">0</span>
+            </div>
+            <div class="text-center card w-full h-full bg-white p-5">
+                <h2 class="text-xl font-semibold">Rejected</h2>
+                <span id="reject-count" class="text-3xl font-bold">0</span>
+            </div>
+        </div>
+        
+
+    </header>
+    <main class="w-10/12 mx-auto py-6">
+        <h1 class="text-xl font-semibold">Available Jobs</h1>
+        <div class="flex gap-3 py-2">
+            <button id="all-job" class="btn btn-primary btn-soft px-5 py-2">All</button>
+            <button id="interview-job" class="btn btn-primary btn-soft px-5 py-2">Interview</button>
+            <button id="rejected-job" class="btn btn-primary btn-soft px-5 py-2">Rejected</button>
+        </div>
+
+        
     </main>
-    <footer>
+    <footer class="w-10/12 mx-auto">
 
     </footer>
 </body>
+
 </html>
