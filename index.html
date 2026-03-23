@@ -29,18 +29,183 @@
                 <span id="reject-count" class="text-3xl font-bold">0</span>
             </div>
         </div>
-        
+
 
     </header>
     <main class="w-10/12 mx-auto py-6">
-        <h1 class="text-xl font-semibold">Available Jobs</h1>
-        <div class="flex gap-3 py-2">
-            <button id="all-job" class="btn btn-primary btn-soft px-5 py-2">All</button>
-            <button id="interview-job" class="btn btn-primary btn-soft px-5 py-2">Interview</button>
-            <button id="rejected-job" class="btn btn-primary btn-soft px-5 py-2">Rejected</button>
-        </div>
+        <section class="tab-section">
+            <h1 class="text-xl font-semibold">Available Jobs</h1>
+            <div class="flex gap-3 py-2">
+                <button id="all-job" class="btn btn-primary btn-soft px-5 py-2">All</button>
+                <button id="interview-job" class="btn btn-primary btn-soft px-5 py-2">Interview</button>
+                <button id="rejected-job" class="btn btn-primary btn-soft px-5 py-2">Rejected</button>
+            </div>
+        </section>
+        <section class="jobs flex flex-col gap-4">
+            <div class="job-card bg-white py-5 px-3 rounded-lg">
+                <div class="job-titles py-1">
+                    <h1 class="font-bold text-md">Mobile First Corp</h1>
+                    <p class="text-md text-base-400">React Native Developer</p>
+                </div>
+                <p class="text-sm py-1">
+                    Remote . Full Time . $130,000-$175,000
+                </p>
+                <button class="btn btn-soft" id="status">NOT APPLIED</button>
+                <p class="description py-1">
+                    Build cross-platform mobile application using React Native. Work on products used by millions of
+                    users worldwide.
+                </p>
+                <div class="action py-1">
+                    <button class="btn" id="interview-action">Interview</button>
+                    <button class="btn" id="rejected-action">Rejected</button>
+                </div>
+            </div>
+            <div class="job-card bg-white py-5 px-3 rounded-lg">
+                <div class="job-titles py-1">
+                    <h1 class="font-bold text-md">TechNova Solutions</h1>
+                    <p class="text-md text-base-400">Frontend Developer</p>
+                </div>
+                <p class="text-sm py-1">
+                    Remote . Full Time . $80,000-$110,000
+                </p>
+                <button class="btn btn-soft" id="status">NOT APPLIED</button>
+                <p class="description py-1">
+                    Develop responsive UI using HTML, CSS, and JavaScript frameworks like React.
+                </p>
+                <div class="action py-1">
+                    <button class="btn" id="interview-action">Interview</button>
+                    <button class="btn" id="rejected-action">Rejected</button>
+                </div>
+            </div>
 
-        
+            <div class="job-card bg-white py-5 px-3 rounded-lg">
+                <div class="job-titles py-1">
+                    <h1 class="font-bold text-md">CodeCraft Ltd</h1>
+                    <p class="text-md text-base-400">Backend Developer</p>
+                </div>
+                <p class="text-sm py-1">
+                    Onsite . Full Time . $90,000-$120,000
+                </p>
+                <button class="btn btn-soft" id="status">NOT APPLIED</button>
+                <p class="description py-1">
+                    Build scalable APIs with Node.js and manage databases like MongoDB.
+                </p>
+                <div class="action py-1">
+                    <button class="btn" id="interview-action">Interview</button>
+                    <button class="btn" id="rejected-action">Rejected</button>
+                </div>
+            </div>
+
+            <div class="job-card bg-white py-5 px-3 rounded-lg">
+                <div class="job-titles py-1">
+                    <h1 class="font-bold text-md">InnoSoft</h1>
+                    <p class="text-md text-base-400">Full Stack Developer</p>
+                </div>
+                <p class="text-sm py-1">
+                    Hybrid . Full Time . $100,000-$140,000
+                </p>
+                <button class="btn btn-soft" id="status">NOT APPLIED</button>
+                <p class="description py-1">
+                    Work on both frontend and backend using MERN stack technologies.
+                </p>
+                <div class="action py-1">
+                    <button class="btn" id="interview-action">Interview</button>
+                    <button class="btn" id="rejected-action">Rejected</button>
+                </div>
+            </div>
+
+            <div class="job-card bg-white py-5 px-3 rounded-lg">
+                <div class="job-titles py-1">
+                    <h1 class="font-bold text-md">PixelPerfect</h1>
+                    <p class="text-md text-base-400">UI/UX Designer</p>
+                </div>
+                <p class="text-sm py-1">
+                    Remote . Contract . $60,000-$90,000
+                </p>
+                <button class="btn btn-soft" id="status">NOT APPLIED</button>
+                <p class="description py-1">
+                    Design user-friendly interfaces and improve user experience for web apps.
+                </p>
+                <div class="action py-1">
+                    <button class="btn" id="interview-action">Interview</button>
+                    <button class="btn" id="rejected-action">Rejected</button>
+                </div>
+            </div>
+
+            <div class="job-card bg-white py-5 px-3 rounded-lg">
+                <div class="job-titles py-1">
+                    <h1 class="font-bold text-md">CloudEdge</h1>
+                    <p class="text-md text-base-400">DevOps Engineer</p>
+                </div>
+                <p class="text-sm py-1">
+                    Remote . Full Time . $110,000-$150,000
+                </p>
+                <button class="btn btn-soft" id="status">NOT APPLIED</button>
+                <p class="description py-1">
+                    Manage CI/CD pipelines, cloud infrastructure, and deployment automation.
+                </p>
+                <div class="action py-1">
+                    <button class="btn" id="interview-action">Interview</button>
+                    <button class="btn" id="rejected-action">Rejected</button>
+                </div>
+            </div>
+
+            <div class="job-card bg-white py-5 px-3 rounded-lg">
+                <div class="job-titles py-1">
+                    <h1 class="font-bold text-md">DataNest</h1>
+                    <p class="text-md text-base-400">Data Analyst</p>
+                </div>
+                <p class="text-sm py-1">
+                    Hybrid . Full Time . $70,000-$95,000
+                </p>
+                <button class="btn btn-soft" id="status">NOT APPLIED</button>
+                <p class="description py-1">
+                    Analyze data trends and create dashboards using tools like Power BI.
+                </p>
+                <div class="action py-1">
+                    <button class="btn" id="interview-action">Interview</button>
+                    <button class="btn" id="rejected-action">Rejected</button>
+                </div>
+            </div>
+
+            <div class="job-card bg-white py-5 px-3 rounded-lg">
+                <div class="job-titles py-1">
+                    <h1 class="font-bold text-md">CyberShield</h1>
+                    <p class="text-md text-base-400">Security Engineer</p>
+                </div>
+                <p class="text-sm py-1">
+                    Onsite . Full Time . $120,000-$160,000
+                </p>
+                <button class="btn btn-soft" id="status">NOT APPLIED</button>
+                <p class="description py-1">
+                    Ensure application security and protect systems from vulnerabilities.
+                </p>
+                <div class="action py-1">
+                    <button class="btn" id="interview-action">Interview</button>
+                    <button class="btn" id="rejected-action">Rejected</button>
+                </div>
+            </div>
+
+            <div class="job-card bg-white py-5 px-3 rounded-lg">
+                <div class="job-titles py-1">
+                    <h1 class="font-bold text-md">AI Labs</h1>
+                    <p class="text-md text-base-400">Machine Learning Engineer</p>
+                </div>
+                <p class="text-sm py-1">
+                    Remote . Full Time . $130,000-$180,000
+                </p>
+                <button class="btn btn-soft" id="status">NOT APPLIED</button>
+                <p class="description py-1">
+                    Build and deploy ML models for intelligent applications.
+                </p>
+                <div class="action py-1">
+                    <button class="btn" id="interview-action">Interview</button>
+                    <button class="btn" id="rejected-action">Rejected</button>
+                </div>
+            </div>
+        </section>
+
+
     </main>
     <footer class="w-10/12 mx-auto">
 
