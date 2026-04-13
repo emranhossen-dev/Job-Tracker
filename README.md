@@ -8,3 +8,6 @@
    Event delegation lets a parent handle events from its children efficiently, especially when elements are dynamic.
 5. What is the difference between preventDefault() and stopPropagation() methods?
    preventDefault() stops the browser’s default action, while stopPropagation() stops the event from bubbling or capturing through the DOM
+
+
+live link: 
